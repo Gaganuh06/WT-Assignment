@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Gagan Umesh Hosamani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <a class="logo" href="index.html">GUH<span>.</span></a>
+    <div class="nav-links">
+        <a href="index.html">Home</a><a class="active" href="resume.html">Resume</a>
+        <a href="biodata.html">Profile</a><a href="projects.html">Projects</a>
+        <button id="themeToggle" class="theme-btn">☾</button>
+    </div>
+</nav>
+
+<main class="page">
+<header class="page-header">
+    <p class="eyebrow">CURRICULUM VITAE</p>
+    <h1>Gagan Umesh Hosamani</h1>
+    <p>Computer Science Engineering Student · Software · RAG · Security</p>
+    <div class="contact-line">Bengaluru, Karnataka, India · +91 9148630228 · gagan.u.hosmani06@gmail.com</div>
+    <div class="hero-buttons">
+        <a class="btn primary" href="mailto:gagan.u.hosmani06@gmail.com">Contact Me</a>
+        <button class="btn secondary" onclick="window.print()">Print Resume</button>
+    </div>
+</header>
+
+<section class="resume-section">
+    <div class="resume-title"><span>01</span><h2>Education</h2></div>
+    <div class="timeline">
+        <article class="timeline-item">
+            <b>EXPECTED 2028</b>
+            <h3>RV Institute of Technology and Management, Bengaluru</h3>
+            <p>Bachelor of Engineering, Computer Science and Engineering · <strong>CGPA: 9.38/10</strong></p>
+        </article>
+    </div>
+</section>
+
+<section class="resume-section">
+    <div class="resume-title"><span>02</span><h2>Technical Skills</h2></div>
+    <div class="skill-columns">
+        <div><h3>Languages</h3><p>Java · Python · C · C++ · JavaScript</p></div>
+        <div><h3>Web & Data</h3><p>HTML · CSS · JavaScript · SQL · Pandas · Selenium</p></div>
+        <div><h3>Developer Tools</h3><p>Git · GitHub · VS Code · IntelliJ IDEA · PyCharm</p></div>
+        <div><h3>Relevant Topics</h3><p>Data Structures and Algorithms · Java OOP · DBMS · Operating Systems</p></div>
+        <div><h3>RAG / Security</h3><p>RAG Architecture · RBAC · Secure Retrieval Design</p></div>
+        <div><h3>Engineering Focus</h3><p>Validation · Testing · Authorization · Auditability · Automation</p></div>
+    </div>
+</section>
+
+<section class="resume-section">
+    <div class="resume-title"><span>03</span><h2>Projects</h2></div>
+    <div class="resume-projects">
+        <article class="glass-card">
+            <h3>Meeting-to-CRM Assistant</h3>
+            <p class="muted">Python · Starlette · SQLite · Gemini API · Independent Project</p>
+            <p>Built a transcript-to-CRM review workflow with a Starlette web interface and SQLite; links each transcript to an exact deal ID and drafts evidence-backed follow-ups in offline or Gemini mode.</p>
+            <p>Enforced human approval before CRM writes with quote and turn checks, duplicate detection, deal-version conflict protection and transactional updates. Added deal/transcript management, completion history, deletion safeguards, audit events, a token-protected API, 41 automated checks and eight offline validation scenarios.</p>
+        </article>
+
+        <article class="glass-card">
+            <h3>Secure RAG with Role-Based Access Control</h3>
+            <p class="muted">RAG · RBAC · Vector Retrieval · Security · Research and Design</p>
+            <p>Reviewed nine reference papers and identified defensible gaps in dynamic permission revocation, stale-cache prevention, end-to-end leakage evaluation and security-performance overhead.</p>
+            <p>Designed a retrieval-layer RBAC pipeline that authenticates the user, loads current permissions, filters vector retrieval before ranking and context construction, and returns only authorized answers and citations. Authored a validated 81-page technical guide.</p>
+        </article>
+
+        <article class="glass-card">
+            <h3>Amazon India Product Scraper</h3>
+            <p class="muted">Python · Selenium · Pandas · pytest · Supporting Project</p>
+            <p>Automated multi-page Amazon India searches and extracted title, price, rating, reviews, availability and product links into validated UTF-8 CSV output.</p>
+            <p>Processed 47 product cards and retained 45 unique products after deduplication; hardened explicit waits, optional-field handling, validation, tests and documented responsible-use limitations.</p>
+        </article>
+    </div>
+</section>
+
+<section class="resume-section">
+    <div class="resume-title"><span>04</span><h2>Activities & Hackathons</h2></div>
+    <div class="glass-card">
+        <h3>Smart India Hackathon 2026 — BEL Problem Statement</h3>
+        <p class="muted">College Internal Round · Ongoing</p>
+        <p>Contributing to idea development and blockchain research for the proposal-stage solution. Developed a governed asset-management concept combining verified identities, smart-contract RBAC, protected off-chain data and tamper-evident audit events.</p>
+    </div>
+</section>
+
+<section class="resume-section">
+    <div class="resume-title"><span>05</span><h2>Certifications</h2></div>
+    <div class="two-card">
+        <div class="glass-card"><h3>C-Programming — Solid Foundations</h3><p>Udemy · Dec 2025</p></div>
+        <div class="glass-card"><h3>100 Days of Code: The Complete Python Pro Bootcamp</h3><p>Udemy · Completed</p></div>
+        <div class="glass-card"><h3>C++ Programming — From Beginner to Beyond</h3><p>Udemy · Sep 2026</p></div>
+    </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Gagan Umesh Hosamani · Built with HTML, CSS & JavaScript</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Gagan Umesh Hosamani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <a class="logo" href="index.html">GUH<span>.</span></a>
+    <div class="nav-links">
+        <a href="index.html">Home</a><a href="resume.html">Resume</a>
+        <a href="biodata.html">Profile</a><a class="active" href="projects.html">Projects</a>
+        <button id="themeToggle" class="theme-btn">☾</button>
+    </div>
+</nav>
+
+<main class="page">
+<header class="page-header">
+    <p class="eyebrow">SELECTED WORK</p>
+    <h1>Projects</h1>
+    <p>Engineering work focused on automation, secure retrieval, data extraction and practical software systems.</p>
+</header>
+
+<div class="filter-bar">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="software">Software</button>
+    <button class="filter" data-filter="security">Security / RAG</button>
+    <button class="filter" data-filter="automation">Automation</button>
+</div>
+
+<section class="project-grid">
+    <article class="project-card" data-category="software">
+        <div class="project-number">01</div>
+        <h2>Meeting-to-CRM Assistant</h2>
+        <p class="project-type">PYTHON • STARLETTE • SQLITE • GEMINI API</p>
+        <p>Built a transcript-to-CRM review workflow with a Starlette web interface and SQLite. Each transcript is linked to an exact deal ID and the system drafts evidence-backed follow-ups in offline or Gemini mode.</p>
+        <p>Human approval is enforced before CRM writes using quote and turn checks, duplicate detection, deal-version conflict protection and transactional updates. The system also includes completion history, deletion safeguards, audit events and a token-protected API.</p>
+        <div class="tech"><span>Python</span><span>Starlette</span><span>SQLite</span><span>Gemini API</span><span>Validation</span></div>
+    </article>
+
+    <article class="project-card" data-category="security">
+        <div class="project-number">02</div>
+        <h2>Secure RAG with Role-Based Access Control</h2>
+        <p class="project-type">RAG • RBAC • VECTOR RETRIEVAL • SECURITY</p>
+        <p>Designed a retrieval-layer RBAC pipeline that authenticates users, loads current permissions, filters vector retrieval before ranking and context construction, and returns only authorized answers and citations.</p>
+        <p>The design addresses dynamic permission revocation, stale-cache prevention, end-to-end leakage evaluation and security-performance overhead. Evaluation metrics include Precision@k, Recall@k, unauthorized exposure rate, response time, RBAC overhead, revocation delay and citation authorization.</p>
+        <div class="tech"><span>RAG</span><span>RBAC</span><span>Vector Search</span><span>Security</span><span>Retrieval</span></div>
+    </article>
+
+    <article class="project-card" data-category="automation">
+        <div class="project-number">03</div>
+        <h2>Amazon India Product Scraper</h2>
+        <p class="project-type">PYTHON • SELENIUM • PANDAS • PYTEST</p>
+        <p>Automated multi-page Amazon India searches and extracted title, price, rating, reviews, availability and product links into validated UTF-8 CSV output.</p>
+        <p>Processed 47 product cards and retained 45 unique products after deduplication. The project includes explicit waits, optional-field handling, validation, tests and documented responsible-use limitations.</p>
+        <div class="tech"><span>Python</span><span>Selenium</span><span>Pandas</span><span>pytest</span><span>CSV</span></div>
+    </article>
+</section>
+
+<section class="resume-section">
+    <div class="resume-title"><span>04</span><h2>Research Direction</h2></div>
+    <div class="glass-card">
+        <h3>Security-aware retrieval systems</h3>
+        <p>Reviewed nine reference papers and identified gaps around dynamic permission revocation, stale-cache prevention, leakage evaluation and security-performance overhead. Authored a validated 81-page technical guide.</p>
+    </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Gagan Umesh Hosamani</footer>
+<script src="script.js"></script>
+</body>
+</html>
